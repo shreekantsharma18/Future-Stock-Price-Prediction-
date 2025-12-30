@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction Graph</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-extrabold mb-8 text-center text-white">Stock Price Prediction Graph</h1>
+
+        <div class="file-input-wrapper">
+            <label for="csvFile" class="text-lg font-medium text-gray-300">Select your stock data CSV file:</label>
+            <input type="file" id="csvFile" name="csvFile" accept=".csv" class="file-input">
+            <button id="uploadButton" class="upload-button">Generate Graph</button>
+        </div>
+
+        <div id="loadingSpinner" class="loading-spinner"></div>
+        <p id="errorMessage" class="error-message hidden"></p>
+
+        <div class="graph-container">
+            <img id="graphImage" class="graph-image hidden" alt="Stock Price Prediction Graph">
+        </div>
+    </div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
